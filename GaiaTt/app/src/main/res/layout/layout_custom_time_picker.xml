@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="标题"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_selected1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/systemBule"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/systemBule"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="小时"
+            android:textColor="@color/TextColorLightGray"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="分钟"
+            android:textColor="@color/TextColorLightGray"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.gaia.member.gaiatt.makeorder.ui.WheelView
+            android:id="@+id/wheel_hour"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:itemNumber="3"
+            app:lineColor="@color/systemBule"
+            app:lineHeight="1dp"
+            app:maskHight="35dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/TextColorLightGray"
+            app:normalTextSize="18sp"
+            app:selectedTextColor="@color/systemBule"
+            app:selectedTextSize="22sp"
+            app:unitHight="42dp"
+            />
+
+        <com.gaia.member.gaiatt.makeorder.ui.WheelView
+            android:id="@+id/wheel_minute"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:itemNumber="3"
+            app:lineColor="@color/systemBule"
+            app:lineHeight="1dp"
+            app:maskHight="35dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/TextColorLightGray"
+            app:normalTextSize="18sp"
+            app:selectedTextColor="@color/systemBule"
+            app:selectedTextSize="22sp"
+            app:unitHight="42dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/bg_blue_rect_solid_btn"
+                android:text="确定"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/bg_orange_rect_solid_btn"
+                android:text="取消"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

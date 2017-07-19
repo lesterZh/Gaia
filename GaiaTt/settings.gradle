@@ -1,0 +1,1 @@
+include ':app', ':androidlib', ':greendaogenerator', ':calendarlib', ':componentlib', ':leanchatlib', ':imageloaderlib', ':nimchartlib', ':mpchartlib', ':uikit'

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaia.member.gaiatt.login.activity.TestRefreshLoadMoreActivity">
+
+
+    <com.gaia.member.gaiatt.ui.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head"></include>
+
+        <com.gaia.member.gaiatt.ui.PullOrLoadListView
+            android:id="@+id/gaia_search_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.gaia.member.gaiatt.ui.PullOrLoadListView>
+
+        <include layout="@layout/load_more"></include>
+
+    </com.gaia.member.gaiatt.ui.PullToRefreshLayout>
+</LinearLayout>

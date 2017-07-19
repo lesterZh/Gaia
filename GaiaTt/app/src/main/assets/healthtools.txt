@@ -1,0 +1,41 @@
+﻿{
+    "param": {
+        "list": [
+            {
+                "title": "理想体重计算器",
+                "detail": "理想体重计算器指的是体重数值在正常范围内",
+                "icon": "bmi.png",
+                "stauts": true,
+                "linkUrl": "http://xxx/test/BMI.html",
+                "vip": "flase"
+            },
+            {
+                "title": "体重指数BMI",
+                "detail": "想知道你是否体重超标么？体重指数（bmi）",
+                "icon": "bmi.png",
+                "stauts": true,
+                "linkUrl": "http://xxx/test/BMI.html",
+                "vip": "flase"
+            },
+            {
+                "title": "腰臀比计算",
+                "detail": "此工具可以帮你了解你是什么样子的体型",
+                "icon": "xx.png",
+                "stauts": true,
+                "linkUrl": "http://xxx/test/yaotun.html",
+                "vip": false
+            },
+            {
+                "title": "每日能量需求",
+                "detail": "想知道你一天究竟该摄入多少能量吗？",
+                "icon": "bmi.png",
+                "stauts": true,
+                "linkUrl": "http://xxx/test/BMI.html",
+                "vip": "flase"
+            }
+        ]
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

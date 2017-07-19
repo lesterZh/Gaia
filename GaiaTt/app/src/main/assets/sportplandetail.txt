@@ -1,0 +1,121 @@
+﻿{
+    "param": {
+        "list": [
+            {
+                "title": "俯卧撑",
+                "detail": "每组5个，共10组，1个小时",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 1,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            },
+            {
+                "title": "慢跑",
+                "detail": "每天运动30分钟，每周两次",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 2,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            },
+            {
+                "title": "俯卧撑",
+                "detail": "每组5个，共10组，1个小时",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 1,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            },
+            {
+                "title": "慢跑",
+                "detail": "每天运动30分钟，每周两次",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 3,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            },
+            {
+                "title": "俯卧撑",
+                "detail": "每组5个，共10组，1个小时",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 2,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            },
+            {
+                "title": "慢跑",
+                "detail": "每天运动30分钟，每周两次",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 2,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            },
+            {
+                "title": "俯卧撑",
+                "detail": "每组5个，共10组，1个小时",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 3,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            },
+            {
+                "title": "慢跑",
+                "detail": "每天运动30分钟，每周两次",
+                "status": 1,
+                "date": "2015-02-13",
+                "level": 3,
+                "missionId": 100001,
+                "attrs": "",
+                "repeat": 0,
+                "times": 10,
+                "spendTime": 60,
+                "feelLevel": 1
+            }
+        ],
+        "title": "轻度健康干预计划",
+        "detail": "改善肝功能。大家都知道，喝酒其实是很伤害我们的肝脏的，如果喝酒的太多的话，有的人会容易导致中毒的，那是因为他们的肝脏变得不好了，戒酒之后我们的肝脏会明显变好，而且不会得一些肝脏疾病之类的。",
+        "noitce": "注意事项：防止拉伤，注意运动强度",
+        "repeatDetail": "30天",
+        "fitGroupDetail": "适用年龄 20岁-30岁",
+        "levelDetail": "第一阶段：养成运动习惯",
+        "startDate": "2015-02-03",
+        "endDate": "2015-03-04"
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="RegistEditText" >
+    </style>
+
+    <style name="RegistEditTextStyle" >
+        <item name="android:layout_width" >317dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="RegistCustomLayoutStyle" >
+        <item name="android:layout_width" >317dp</item>
+        <item name="android:layout_height" >40dp</item>
+        <item name="android:background" >@drawable/bg_input</item>
+        <item name="android:gravity" >center_vertical</item>
+        <item name="android:orientation" >horizontal</item>
+        <item name="android:paddingLeft" >10dp</item>
+    </style>
+
+    <style name="ButtonBlueSolidStyle" >
+        <item name="android:layout_width">317dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/btn_blue_selector</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="SmallBlueSolidButton">
+        <item name="android:layout_height">29dp</item>
+        <item name="android:background">@drawable/bg_blue_solid_btn_selector</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+    </style>
+
+
+    <style name="citySelectWheelStyle"
+        >
+        <item name="com.gaia.member.gaiatt:itemNumber">5</item>
+        <item name="com.gaia.member.gaiatt:lineColor">@color/systemBule</item>
+        <item name="com.gaia.member.gaiatt:maskHight">32dp</item>
+        <item name="com.gaia.member.gaiatt:noEmpty">true</item>
+        <item name="com.gaia.member.gaiatt:lineHeight">1dp</item>
+        <item name="com.gaia.member.gaiatt:normalTextColor">@color/TextColorLightGray</item>
+        <item name="com.gaia.member.gaiatt:normalTextSize">15sp</item>
+        <item name="com.gaia.member.gaiatt:selectedTextColor">@color/systemBule</item>
+        <item name="com.gaia.member.gaiatt:selectedTextSize">18sp</item>
+        <item name="com.gaia.member.gaiatt:unitHight">40dp</item>
+    </style>
+
+
+    <style name="ZhtCustomProgressDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="WeekDayTextAppearance" >
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="TiTleTextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+
+    <style name="DateTextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#333</item>
+    </style>
+    <style name="RadioButtonStyleOne" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@color/text_content</item>
+        <item name="android:button">@drawable/selector_icon_pitch</item>
+    </style>
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+<!--评分进度条-->
+    <declare-styleable name="CustomCommentStar">
+        <attr name="lightStarSrc" format="reference"/>
+        <attr name="unLightStarSrc" format="reference"/>
+        <attr name="imageWidth" format="dimension"/>
+        <attr name="imageHeight" format="dimension"/>
+        <attr name="imagePadding" format="dimension"/>
+        <attr name="clickable" format="boolean"/>
+    </declare-styleable>
+</resources>

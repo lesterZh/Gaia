@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp">
+
+    <LinearLayout
+        android:id="@+id/titlebar_back_ll"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:onClick="OnAroundClick"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/titlebar_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_icon_nav_back"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titlebar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="17sp"
+        android:textColor="@color/text_index"
+        android:text="@string/around_gaia"/>
+
+    <LinearLayout
+        android:id="@+id/titlebar_search_ll"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:onClick="OnAroundClick"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:id="@+id/titlebar_search_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_icon_search"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgound_line"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

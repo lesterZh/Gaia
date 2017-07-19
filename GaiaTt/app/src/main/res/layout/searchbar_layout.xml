@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:id="@+id/searchbar_search_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:onClick="OnSearchClick"
+        >
+        <ImageView
+            android:id="@+id/searchbar_search_img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_search_small"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/searchbar_search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/please_input"
+            android:singleLine="true"
+            android:background="@color/backgound_line"
+            android:textSize="15sp"
+            android:textColor="@color/text_content"
+            android:textColorHint="@color/text_hint"
+            android:textCursorDrawable="@null"
+            android:paddingRight="25dp"
+            />
+        <ImageView
+            android:id="@+id/searchbar_search_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:onClick="OnSearchClick"
+            android:visibility="gone"
+            android:src="@drawable/clear_btn"/>
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/searchbar_cancel_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:onClick="OnSearchClick"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/searchbar_cancel"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgound_line"/>
+</RelativeLayout>

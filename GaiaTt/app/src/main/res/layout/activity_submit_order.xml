@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/systemBackground"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".makeorder.activity.SubmitOrderActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已选服务："
+                        android:textColor="@color/TextColorDarkGray"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约挂号服务"
+                        android:textColor="@color/TextColorLightGray"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付金额："
+                        android:textColor="@color/TextColorDarkGray"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10元"
+                        android:textColor="@color/systemBule"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约地址："
+                        android:textColor="@color/TextColorDarkGray"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="天泰路999号"
+                        android:textColor="@color/TextColorLightGray"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话："
+                        android:textColor="@color/TextColorDarkGray"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="020-1234567"
+                        android:textColor="@color/TextColorLightGray"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_order_date"
+                    style="@style/RegistEditTextStyle"
+                    android:layout_marginTop="10dp"
+                    android:hint="请选择预约日期"
+                    android:editable="false"/>
+
+                <EditText
+                    android:editable="false"
+                    android:id="@+id/et_order_time"
+                    style="@style/RegistEditTextStyle"
+                    android:layout_marginTop="10dp"
+                    android:hint="请选择预约具体时间"/>
+
+                <EditText
+                    android:id="@+id/et_order_user_name"
+                    style="@style/RegistEditTextStyle"
+                    android:layout_marginTop="10dp"
+                    android:hint="请输入预约人姓名"/>
+
+                <EditText
+                    android:id="@+id/et_order_user_phone"
+                    style="@style/RegistEditTextStyle"
+                    android:layout_marginTop="10dp"
+                    android:hint="请输入预约人手机号码"/>
+
+                <EditText
+                    android:id="@+id/et_order_recommand_name"
+                    style="@style/RegistEditTextStyle"
+                    android:layout_marginTop="10dp"
+                    android:hint="请输入推荐人姓名"/>
+
+                <EditText
+                    android:id="@+id/et_order_recommand_code"
+                    style="@style/RegistEditTextStyle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="请输入推荐人推荐码"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_pay_fee"
+                style="@style/ButtonBlueSolidStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="确认支付"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

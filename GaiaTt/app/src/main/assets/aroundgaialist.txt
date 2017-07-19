@@ -1,0 +1,89 @@
+﻿{
+    "param": {
+        "clinicList": [
+            {
+                "clinicId": 124,
+                "clinicName": "盖亚诊所（高新店）",
+                "headPic": "325423.png",
+                "distance": 800,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-87437777",
+                "longitude": 12.34,
+                "latitude": 123.45
+            },
+            {
+                "clinicId": 123,
+                "clinicName": "盖亚诊所（金牛店）",
+                "headPic": "325423.png",
+                "distance": 110,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-87755577",
+                "longitude": 12.34,
+                "latitude": 123.45
+            },
+            {
+                "clinicId": 111,
+                "clinicName": "盖亚诊所（青羊店）",
+                "headPic": "325423.png",
+                "distance": 1234,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-8778977",
+                "longitude": 12.34,
+                "latitude": 123.45
+            },
+            {
+                "clinicId": 131,
+                "clinicName": "盖亚诊所（成华店）",
+                "headPic": "325423.png",
+                "distance": 223,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-87097777",
+                "longitude": 12.34,
+                "latitude": 123.45
+            },
+            {
+                "clinicId": 144,
+                "clinicName": "盖亚诊所（武侯店）",
+                "headPic": "325423.png",
+                "distance": 657,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-12345777",
+                "longitude": 12.34,
+                "latitude": 123.45
+            },
+            {
+                "clinicId": 155,
+                "clinicName": "盖亚诊所（犀浦店）",
+                "headPic": "325423.png",
+                "distance": 805,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-54677777",
+                "longitude": 12.34,
+                "latitude": 123.45
+            },
+            {
+                "clinicId": 166,
+                "clinicName": "盖亚诊所（龙泉店）",
+                "headPic": "325423.png",
+                "distance": 439,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-098977777",
+                "longitude": 12.34,
+                "latitude": 123.45
+            },
+            {
+                "clinicId": 111,
+                "clinicName": "盖亚诊所（华阳店）",
+                "headPic": "325423.png",
+                "distance":552,
+                "address": "天府大道中段188号",
+                "contactPhone": "028-83333333",
+                "longitude": 12.34,
+                "latitude": 123.45
+            }
+        ]
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

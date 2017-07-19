@@ -1,0 +1,112 @@
+<resources>
+
+    <!--健康管理模块-->
+    <string name="health_manage_status2">评估中</string>
+    <string name="health_manage_ing">正在评估  </string>
+    <string name="percent_sign">%</string>
+    <string name="health_health">健康</string>
+    <string name="health_sub_health">亚健康</string>
+    <string name="health_warnings">健康警告</string>
+    <string name="degree">完成度\t</string>
+    <!--饮酒选择器数据源-->
+    <string-array name="health_record_wine_type">
+        <item>红酒</item>
+        <item>白酒</item>
+        <item>啤酒</item>
+        <item>香槟</item>
+        <item>白兰地</item>
+        <item>葡萄酒</item>
+    </string-array>
+    <!--运动选择器数据源-->
+    <string-array name="health_plan_sport_feel">
+        <item>吃力</item>
+        <item>适中</item>
+        <item>轻松</item>
+    </string-array>
+    <!--标题设置-->
+    <string name="apply_replace_title">我要更换</string>
+    <string name="bmi_title">BMI测试</string>
+    <string name="complaint_title">新增投诉</string>
+    <string name="health_manager_title">健康管理医师</string>
+    <string name="health_plan_title">干预计划列表</string>
+    <string name="health_tools_title">健康工具</string>
+    <string name="process_evaluation_title">过程评价详情</string>
+    <string name="questionaire_list_title">健康评估问卷列表</string>
+    <string name="questionaire_title">健康评估问卷</string>
+    <string name="medicine_plan_title">健康中医干预计划</string>
+    <string name="diet_plan_title">糖尿病饮食干预计划</string>
+    <string name="drink_plan_title">戒酒计划</string>
+    <string name="smoke_plan_title">吸烟计划</string>
+    <string name="sport_plan_title">健康运动干预计划</string>
+
+    <!--内容设置-->
+    <string name="complaint_date">投诉日期：</string>
+    <string name="medicine_plan_content">改善肝功能。大家都知道，喝酒其实是很伤害我们的肝脏的，如果喝酒的太多的话，有的人会容易导致中毒的，那是因为他们的肝脏变得不好了，戒酒之后我们的肝脏会明显变好，而且不会得一些肝脏疾病之类的。</string>
+    <string name="medicine_plan_mind">注意事项：防止拉伤，注意运动强度</string>
+    <string name="diet_plan_content">糖尿病饮食的第一个主要原则就是控制饮食，这样才能达到更好的效果。低糖其实就是少吃或不吃那些容易导致血糖上升的食物。此方案指导和控制糖尿病人更好的安排饮食。</string>
+    <string name="diet_plan_mind">少吃太甜、太咸、太油的食物</string>
+    <string name="drink_plan_content">改善肝功能。大家都知道，喝酒其实是很伤害我们的肝脏的，如果喝酒的太多的话，有的人会容易导致中毒的，那是因为他们的肝脏变得不好了，戒酒之后我们的肝脏会明显变好，而且不会得一些肝脏疾病之类的。</string>
+    <string name="drink_plan_mind">注意事项：戒断反应</string>
+    <string name="smoke_plan_content">停止吸烟同时也是保护那些不吸烟的家人和朋友的健康。被动吸烟会增加非吸烟者患肺癌，心脏病和中风的风险。吸入二手烟的儿童患者有胸腔疾病（如肺炎和支气管炎）的风险增至两倍</string>
+    <string name="smoke_plan_mind">注意事项：戒烟反应</string>
+    <string name="sport_plan_content">改善肝功能。大家都知道，喝酒其实是很伤害我们的肝脏的，如果喝酒的太多的话，有的人会容易导致中毒的，那是因为他们的肝脏变得不好了，戒酒之后我们的肝脏会明显变好，而且不会得一些肝脏疾病之类的。</string>
+    <string name="sport_plan_mind">注意事项：防止拉伤，注意运动强度</string>
+
+
+    <!--导航文字-->
+    <string-array name="customIndicator_health_plan">
+        <item>全部</item>
+        <item>中医</item>
+        <item>运动</item>
+        <item>饮食</item>
+        <item>吸烟</item>
+        <item>饮酒</item>
+    </string-array>
+    <string-array name="customIndicator_health_record">
+        <item>运动</item>
+        <item>睡眠</item>
+        <item>吸烟</item>
+        <item>饮酒</item>
+        <item>饮食</item>
+    </string-array>
+
+    <!--投诉医师类别-->
+    <string-array name="complaint_type">
+        <item>服务态度差</item>
+        <item>服务质量差</item>
+        <item>药品质量太差</item>
+        <item>不退药</item>
+        <item>医师开药价格不合理</item>
+        <item>用药后发生严重不良反应</item>
+        <item>医师不尊重患者</item>
+        <item>医师乱开药</item>
+        <item>不按时上门服务</item>
+        <item>医师经验太差</item>
+        <item>医师出现误诊</item>
+        <item>医师不和患者沟通</item>
+        <item>没亲和力</item>
+        <item>没有医师执照</item>
+        <item>水平太差</item>
+        <item>不喜欢医师</item>
+        <item>语言上存在沟通问题</item>
+    </string-array>
+
+    <!--弹窗文案设置-->
+    <string name="smoke_dialog_title">输入数量</string>
+    <string name="drink_dialog_title">输入质量</string>
+    <string name="drink_dialog_content1">酒种类</string>
+    <string name="drink_dialog_content2">饮酒量</string>
+    <string name="sleep_dialog_title">睡眠时间设置</string>
+    <string name="sleep_dialog_content1">入睡时间</string>
+    <string name="sleep_dialog_content2">醒来时间</string>
+    <string name="sport_dialog_title">感受</string>
+
+    <!--item 文案-->
+    <string name="not_start">未开始</string>
+    <string name="ongoing">进行中</string>
+    <string name="finished">已完成</string>
+    <string name="complaint_success">您的投诉已经提交成功！</string>
+    <string name="please_select_type">请选择投诉类别</string>
+    <string name="please_input_content">请输入投诉类容</string>
+    <string name="please_input_reason">请输入更换医师理由</string>
+</resources>

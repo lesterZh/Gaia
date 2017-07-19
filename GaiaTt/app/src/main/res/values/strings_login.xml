@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--欢迎注册acitivity的字符串-->
+    <string name="regist_welcome_acitivity_title">欢迎注册</string>
+    <string name="regist_welcome_acitivity_enter_right_phone">手机号格式不正确，请重新输入正确手机号</string>
+    <string name="regist_welcome_acitivity_verification_code_sended">验证码已发送，请注意查收短信</string>
+    <string name="regist_welcome_acitivity_wait">S 重新发送</string>
+
+
+</resources>

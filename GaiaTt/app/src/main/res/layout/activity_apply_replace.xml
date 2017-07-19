@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaia.member.gaiatt.activity.healthmanage.ApplyReplaceActivity">
+    <include layout="@layout/titilebar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgound_line"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+        <EditText
+            android:id="@+id/edt_repalce_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_edittext"
+            android:layout_height="200dp"
+            android:padding="8dp"
+            android:hint="请输入您需要更换健康管理师的原因，保证所陈述内容真实有效，我们会在最快的时间为您处理，投诉内容字数限120字。"
+            android:textColor="@color/text_content"
+            android:textSize="15sp"
+            android:textColorHint="@color/text_hint"
+            android:gravity="top"
+            android:lineSpacingExtra="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_manager_replace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="确定更换"
+            android:background="@drawable/selector_btn_blue"
+            />
+    </LinearLayout>
+
+</LinearLayout>

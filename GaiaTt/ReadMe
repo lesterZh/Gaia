@@ -1,0 +1,199 @@
+使用手册:
+
+一、主要功能:
+    1、网络请求(Get、Post、文件上传(带进度条、不带进度条));
+    2、本地缓存(SQLite、SharedPreference);
+    3、图片加载及缓存;
+    4、其它.
+
+二、使用步骤:
+   1、网络请求: 是利用Retrofit框架来完成的
+
+      a、获取NetApiServiceInterface的对象: 这是在NetUtils中
+          /**
+           * NetConstant.BASE_URL 是主机域名
+           * GsonConverterFactory.create() 是提供解析Json数据的方法,直接转换成对象Bean
+           * RxJavaCallAdapterFactory.create() 是提供Rxjava的支持,可以实现异步调用
+           *
+           **/
+          public NetApiServiceInterface getNetApiServiceInterface() {
+              Retrofit retrofit = new Retrofit.Builder()
+                      .baseUrl(NetConstant.BASE_URL)
+                      .addConverterFactory(GsonConverterFactory.create())
+                      .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                      .build();
+
+              return retrofit.create(NetApiServiceInterface.class);
+          }
+
+      b、Get方法: 在接口NetApiServiceInterface中添加如下代码:
+           /**
+            * name代表接口的名称
+            * xyzBean是此接口返回的数据构成的JsonBean对象
+            * @Query("key") String value 中的key代表请求参数中的key,value就是key的值,可以是多个
+            * getTest(...)这个名字是按照自己意愿取的
+            */
+           @GET("name")
+           Observable<xyzBean> getTest(@Query("key") String value,...);
+
+           调用方法:
+
+           /**
+            * Schedulers.io() 代表是I/O操作,在新的线程中执行,即异步处理
+            * AndroidSchedulers.mainThread() 代表UI主线程
+            *
+            **/
+           Observable<TestBean> call = NetUtils.getNetUtilsInstance().getNetApiServiceInterface().getTest("dd");
+           call.subscribeOn(Schedulers.io())
+               .observeOn(AndroidSchedulers.mainThread())
+               .subscribe(new Subscriber<TestBean>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(TestBean testBean) {
+                        //这边就是返回的数据
+                    }
+               });
+
+
+      c、Post方法: 在接口NetApiServiceInterface中添加如下代码:
+           /**
+            * name代表接口的名称
+            * xyzBean是此接口返回的数据构成的JsonBean对象
+            * @Body RequestBody requestBody 这是Post方法的请求体
+            *
+            **/
+           @POST("name")
+           Observable<xyzBean> postTest(@Body RequestBody requestBody);
+
+           调用方法: 首先得构造请求体,然后才发起Post请求
+                    NetConstant.JSON 是在构造请求体时,MediaType参数的值:
+                       public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+
+
+            try {
+                //构造请求体
+                JSONStringer jsonStringer = new JSONStringer().object()
+                               .key("tel").value("18190712700")
+                               .key("psw").value("wujinwo123")
+                               .key("deviceTag").value("22")
+                               .endObject();
+                String jsonStr = jsonStringer.toString();
+                RequestBody body = RequestBody.create(NetConstant.JSON, jsonStr);
+
+                //发起请求
+                NetUtils.getNetUtilsInstance().getNetApiServiceInterface().postTest(body)
+                               .subscribeOn(Schedulers.io())
+                               .observeOn(AndroidSchedulers.mainThread())
+                               .subscribe(new Subscriber<TestBean>() {
+                                   @Override
+                                   public void onCompleted() {
+
+                                   }
+
+                                   @Override
+                                   public void onError(Throwable e) {
+                                       Log.e("error", "" + e.getMessage());
+                                   }
+
+                                   @Override
+                                   public void onNext(TestBean testBean) {
+                                       if (testBean.getSuccess()) {
+                                           Toast.makeText(MainActivity.this, "成功", Toast.LENGTH_LONG).show();
+                                       } else {
+                                           Toast.makeText(MainActivity.this, "失败", Toast.LENGTH_LONG).show();
+                                       }
+                                   }
+                               });
+
+
+            } catch (Exception e) {
+                 e.printStackTrace();
+               }
+
+      d、文件上传: 要实现带进度条的文件上传,就要重写RequestBody,详情请查看androdlib下的NetUtils
+
+      注意:
+         a. Retrofit的依赖在androidlib这个module下的build.gradle文件中
+
+   2、本地缓存:
+      SQLite数据库: 是利用GreenDao来完成的, 详情配置请查看:http://itangqi.me/2015/07/26/orm-greendao-summary/
+      步骤:
+         a、新建一个java Module,如greendaogenerator
+         b、在对应的android Module下新建一个文件:java-gen,如:此项目中 androidlib下的java-gen
+         c、在新建的java Module下,再新建一个java文件,如greendaogenerator下的GreenDaoGenerator文件,
+            并编写此文件,详情请查看此项目中greendaogenerator下的GreenDaoGenerator文件
+         d、在Application中设置数据库的一些参数,如数据库的名等,代码如下: 我们会用到daoSession这个对象
+             /**
+              * 初始化数据库相关变量
+              */
+             private void setupDataBase() {
+                 DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, DbConstant.DB_NAME, null);
+                 sqLiteDatabase = helper.getWritableDatabase();
+                 daoMaster = new DaoMaster(sqLiteDatabase);
+                 daoSession = daoMaster.newSession();
+             }
+         e、如何创建表请看GreenDaoGenerator.java这个文件;
+         f、有关增删改查请看androidlib下等DbHelper文件
+
+      注意:
+          a. 数据库的名称是在Application中设置的;
+          b. 数据库的版本控制是在GreenDaoGenerator.java文件中控制的;
+          c. 每次更改GreenDaoGenerator.java文件后,都要重新运行一次greendaogenerator这个module;
+          d. 当删除数据库的表的时候,得手动删除java-gen文件夹下对应的代码文件,并卸载手机上的app,重新运行安装;
+          e. GreenDao的依赖是在greendaogenerator这个module下的build.gradle文件中;
+          f. 每创建一个表,就要在DbHelper.java文件中获取该表的对象;
+          g. 所有的增删改查操作前,都要判空.
+
+      SharedPreference缓存: 实现了保存各种基本类型的较小的数据,详情请看androidlib下的SharedPreferencesHelper
+
+
+   3、图片加载及缓存: 利用ImageLoader实现的
+      步骤:
+         a、添加依赖
+         b、在Application中配置ImageLoader,即配置其config信息,包括路径、缓存大小等
+         c、用的时候就可以通过ImageLoader.getInstance()获取ImageLoader对象了,如在app 下的AppBaseActivity,
+            而且要在Activity销毁前,回收该页面缓存在内存中的图片
+         d、使用:
+            /**
+             * url 就是图片的url
+             * imageView就是控件ImageView
+             * ImageUtils.getDisplayImageOptions()是关于加载图片的一些配置,详情请看app下的ImageUtils
+             *
+             **/
+            imageLoader.displayImage(url,imageView,ImageUtils.getDisplayImageOptions());
+
+
+            带有进度条的加载图片:
+             /**
+              * ImageloadingProgressListener是ImageLoader自带的一个接口
+              *
+              **/
+             imageLoader.displayImage(url, imageView, ImageUtils.getDisplayImageOptions(), null, new ImageLoadingProgressListener() {
+                  @Override
+                  public void onProgressUpdate(String s, View view, int i, int i1) {
+
+                       //i--已下载的图片的大小; i1 -- 图片的总大小
+                       Log.e("进度条", "i = " + i + ";   i1 = " + i1);
+
+                       //百分比计算方法
+                       int percent = (int) ((i / (float) i1) * 100);
+                       Log.e("百分比", "" + percent + "%");
+                  }
+             });
+
+             注意:
+                 a. ImageUtils.getDisplayImageOptions() 方法中配置了下载前、下载中、下载失败显示的图片;
+   4、其它:
+         a. 自定义activity基类,简化onCreate()方法;
+         b. 日志统一管理,可以随叫随停---LogUtil;
+         c. 定义activity收集器,集中管理activity;
+         d. 实现了listView的下拉刷新;

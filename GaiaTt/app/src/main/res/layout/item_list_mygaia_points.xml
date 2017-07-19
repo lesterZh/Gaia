@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="13dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_points_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="获得50积分"
+            android:textSize="20sp"
+            android:textColor="@color/systemCyan"/>
+        <TextView
+            android:id="@+id/tv_points_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016年2月2日"
+            android:textSize="13sp"
+            android:textColor="@color/TextColorLightGray"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_arrow_selector"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/tv_points_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购买xxx医疗服务，获得50积分"
+        android:textSize="14sp"
+        android:textColor="@color/TextColorLightGray"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

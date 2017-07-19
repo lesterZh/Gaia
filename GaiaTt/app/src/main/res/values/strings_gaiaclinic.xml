@@ -1,0 +1,223 @@
+<resources>
+
+    <!--盖亚诊所模块-->
+    <string name="around_gaia">身边盖亚</string>
+    <string name="search_gaia">已为您找到如下</string>
+    <string name="search_clinic_gaia">家诊所</string>
+    <string name="no_search_gaia">在该地区没有找到你搜索的诊所</string>
+    <string name="please_input">请输入</string>
+    <string name="cancel">取消</string>
+    <string name="connsulting">我要问诊</string>
+    <string name="clinic_info">诊所信息</string>
+    <string name="contract_phone">电话联系</string>
+    <string name="reservation_service">预约服务</string>
+    <string name="coupon">店铺优惠券</string>
+
+    <!--首页底部滑动文案-->
+    <string-array name="clinic_bottomscontent">
+        <item>你的健康管家为您提供个性化的医疗保健及全面的健康服务，足不出户就能为您解决日常健康问题。</item>
+        <item>远水不救近火，远医不解近疾。</item>
+        <item>积分多多，好礼多多，赶快来兑换吧！</item>
+        <item>你的健康管家为您提供个性化的医疗保健及全面的健康服务，足不出户就能为您解决日常健康问题。</item>
+        <item>远水不救近火，远医不解近疾。</item>
+        <item>积分多多，好礼多多，赶快来兑换吧！</item>
+        <item>你的健康管家为您提供个性化的医疗保健及全面的健康服务，足不出户就能为您解决日常健康问题。</item>
+        <item>远水不救近火，远医不解近疾。</item>
+        <item>积分多多，好礼多多，赶快来兑换吧！</item>
+    </string-array>
+
+    <string-array name="clinic_bottomstitle">
+        <item>家庭医生</item>
+        <item>身边盖亚</item>
+        <item>积分好礼</item>
+        <item>家庭医生</item>
+        <item>身边盖亚</item>
+        <item>积分好礼</item>
+        <item>家庭医生</item>
+        <item>身边盖亚</item>
+        <item>积分好礼</item>
+    </string-array>
+
+    <!--民族选择器列表数据源-->
+    <string-array name="picker_native">
+        <item>汉族</item>
+        <item>蒙古族</item>
+        <item>回族</item>
+        <item>藏族</item>
+        <item>维吾尔族</item>
+        <item>苗族</item>
+        <item>彝族</item>
+        <item>壮族</item>
+        <item>布依族</item>
+        <item>朝鲜族</item>
+        <item>满族</item>
+        <item>侗族</item>
+        <item>瑶族</item>
+        <item>白族</item>
+        <item>土家族</item>
+        <item>哈尼族</item>
+        <item>哈萨克族</item>
+        <item>傣族</item>
+        <item>黎族</item>
+        <item>僳僳族</item>
+        <item>佤族</item>
+        <item>畲族</item>
+        <item>高山族</item>
+        <item>拉祜族</item>
+        <item>水族</item>
+        <item>东乡族</item>
+        <item>纳西族</item>
+        <item>景颇族</item>
+        <item>柯尔克孜族</item>
+        <item>土族</item>
+        <item>达斡尔族</item>
+        <item>仫佬族</item>
+        <item>羌族</item>
+        <item>布朗族</item>
+        <item>撒拉族</item>
+        <item>毛南族</item>
+        <item>仡佬族</item>
+        <item>锡伯族</item>
+        <item>阿昌族</item>
+        <item>普米族</item>
+        <item>塔吉克族</item>
+        <item>怒族</item>
+        <item>乌孜别克族</item>
+        <item>俄罗斯族</item>
+        <item>鄂温克族</item>
+        <item>德昂族</item>
+        <item>保安族</item>
+        <item>裕固族</item>
+        <item>京族</item>
+        <item>塔塔尔族</item>
+        <item>独龙族</item>
+        <item>鄂伦春族</item>
+        <item>赫哲族</item>
+        <item>门巴族</item>
+        <item>珞巴族</item>
+        <item>基诺族</item>
+    </string-array>
+
+    <!--文化程度-->
+    <string-array name="picker_cultrue">
+        <item>博士</item>
+        <item>硕士</item>
+        <item>本科</item>
+        <item>大专</item>
+        <item>中专</item>
+        <item>中技</item>
+        <item>技工学校</item>
+        <item>高中</item>
+        <item>初中</item>
+        <item>小学</item>
+        <item>文盲</item>
+        <item>半文盲</item>
+    </string-array>
+
+    <!--职业-->
+    <string-array name="picker_profession">
+        <item>普通员工</item>
+        <item>中层管理者</item>
+        <item>高层管理者</item>
+        <item>企业主</item>
+        <item>学生</item>
+        <item>自由企业者</item>
+    </string-array>
+
+    <!--导航文字-->
+    <string-array name="customIndicator_aroundgaia">
+        <item>列表</item>
+        <item>地图</item>
+    </string-array>
+    <string-array name="customIndicator_consulting">
+        <item>地区</item>
+        <item>已咨询</item>
+    </string-array>
+    <string-array name="customIndicator_healthservice">
+        <item>已购</item>
+        <item>购买</item>
+    </string-array>
+
+    <!--标题设置-->
+    <string name="health_service_title">健康服务</string>
+    <string name="personal_archives_title">个人档案</string>
+
+    <!--选择器Titlee-->
+    <string name="nation_title">民族</string>
+    <string name="cultrue_title">文化程度</string>
+    <string name="profession_title">职业</string>
+    <string name="clinic_residence">地区</string>
+    <string name="clinic_county">居住区</string>
+    <string name="clinic_beijing">北京市</string>
+
+    <!--list/grid-item文案-->
+    <string name="buy">可购</string>
+    <string name="not_buy">不可购购</string>
+    <string name="vip_1">VIP1</string>
+    <string name="vip_2">VIP2</string>
+    <string name="service">专属服务</string>
+    <!--个人档案-->
+    <string name="user_women">女</string>
+    <string name="user_man">男</string>
+    <string name="user_household">户籍</string>
+    <string name="a_type">A型</string>
+    <string name="b_type">B型</string>
+    <string name="o_type">O型</string>
+    <string name="ab_type">AB型</string>
+    <string name="positive_type">阳性</string>
+    <string name="negative_type">阴性</string>
+    <string name="user_married">已婚</string>
+    <string name="user_unmarried">未婚</string>
+    <string name="user_divorce">离婚</string>
+    <string name="user_widowed">丧偶</string>
+    <string name="employee_insurance">城镇职工基本医疗保险</string>
+    <string name="resident_insurance">城镇居民基本医疗保险</string>
+    <string name="poor__insurance">贫困救助</string>
+    <string name="rural_insurance">新型农村合作医疗</string>
+    <string name="commercial_insurance">商业医疗保险</string>
+    <string name="all_free">全公费</string>
+    <string name="all_own">全自费</string>
+    <string name="other">其他</string>
+    <string name="chimney">烟囱</string>
+    <string name="hoods">油烟机</string>
+    <string name="ventilator">换气扇</string>
+    <string name="liquefied">液化气</string>
+    <string name="gas">天然气</string>
+    <string name="methane">沼气</string>
+    <string name="coal">煤</string>
+    <string name="firewood">柴火</string>
+    <string name="tap_water">自来水</string>
+    <string name="purification_water">经净化过滤的水</string>
+    <string name="wells">井水</string>
+    <string name="river_and_lake_water">河湖水</string>
+    <string name="pond_water">塘水</string>
+    <string name="sanitary_toile">卫生厕所</string>
+    <string name="septic_toile">一格或二格粪池式</string>
+    <string name="closestool">马桶</string>
+    <string name="pit">露天粪坑</string>
+    <string name="single">单设</string>
+    <string name="indoor">室内</string>
+    <string name="no_rb">无</string>
+    <string name="save_success">保存成功</string>
+    <string name="vertical_symbol">|</string>
+    <string name="please_input_name">请输入姓名</string>
+    <string name="please_select_sex">请选择性别</string>
+    <string name="please_input_birthday">请输入出生日期</string>
+    <string name="please_input_id">请输入身份证号</string>
+    <string name="please_input_phonenumber">请输入联系电话</string>
+    <string name="please_select_holdtype">请选择常住类型</string>
+    <string name="please_select_native_place">请选择籍贯</string>
+    <string name="please_select_etchnicity">请选择民族</string>
+    <string name="please_select_abo">请选择ABO血型</string>
+    <string name="please_select_rh">请选择RH血型</string>
+    <string name="please_select_education">请选择文化程度</string>
+    <string name="please_select_profession">请选择职业</string>
+    <string name="please_select_marital_status">请选择婚姻状况</string>
+    <string name="please_select_payment">请选择医疗费用支付方式</string>
+    <string name="commit_success">您的申请已经提交成功！</string>
+    <string name="location_fail">定位失败</string>
+    <string name="receive_success">领取成功</string>
+    <string name="please_input_right_id">请输入正确的身份证号码</string>
+    <string name="please_input_right_number">请输入正确的11位手机号码</string>
+
+</resources>

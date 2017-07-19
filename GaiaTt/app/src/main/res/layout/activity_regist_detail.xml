@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_input"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_id_card_number"
+                    style="@style/RegistEditTextStyle"
+
+                    android:background="@null"
+                    android:hint="身份证号码（必填）"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/editTextBoundLine"/>
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/RegistEditTextStyle"
+
+                    android:background="@null"
+                    android:hint="家庭地址"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/editTextBoundLine"/>
+
+                <EditText
+                    android:id="@+id/et_company"
+                    style="@style/RegistEditTextStyle"
+
+                    android:background="@null"
+                    android:hint="工作单位名称"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_contact_name"
+                    style="@style/RegistEditTextStyle"
+                    android:background="@null"
+                    android:hint="联系人姓名"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/editTextBoundLine"/>
+
+                <EditText
+                    android:id="@+id/et_contact_phone"
+                    style="@style/RegistEditTextStyle"
+                    android:background="@null"
+                    android:hint="联系人电话"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_marriage_state"
+
+                    style="@style/RegistCustomLayoutStyle"
+                    android:background="@null"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_marriage_state_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="婚姻状况"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_marriage_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:text="未婚"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow_selector"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/editTextBoundLine"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_profession"
+                    style="@style/RegistCustomLayoutStyle"
+                    android:background="@null">
+
+                    <TextView
+                        android:id="@+id/tv_profession_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职业"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_profession"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:text="计算机软件开发"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@drawable/icon_arrow_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gurdian_info"
+                style="@style/RegistCustomLayoutStyle"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_gurdian_info_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监护人信息"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_gurdian_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="张三"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_selector"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wear_device"
+                style="@style/RegistCustomLayoutStyle"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_wear_device_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="穿戴设备"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_wear_device"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="心跳记录仪"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_selector"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/ButtonBlueSolidStyle"
+
+                android:layout_marginTop="20dp"
+                android:text="保存"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

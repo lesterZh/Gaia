@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.gaia.member.gaiatt"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 录制声音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- SDK 权限申明, 第三方 APP 接入时，请将 com.zhhtao.imdemo 替换为自己的包名 -->
+    <!-- 和下面的 uses-permission 一起加入到你的 AndroidManifest 文件中。 -->
+    <permission
+        android:name="com.gaia.member.gaiatt.permission.RECEIVE_MSG"
+        android:protectionLevel="signature"/>
+    <!-- 接收 SDK 消息广播权限， 第三方 APP 接入时，请将 com.zhhtao.imdemo 替换为自己的包名 -->
+    <uses-permission android:name="com.gaia.member.gaiatt.permission.RECEIVE_MSG"/>
+
+
+    <application
+        android:name=".GaiaCustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login.activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestActivity"/>
+        <activity android:name=".activity.RecyclerViewActivity"/>
+        <activity android:name=".activity.ListViewActivity"/>
+
+        <!--
+            <activity
+            android:name=".StartActivity"
+            android:label="@string/title_activity_login"></activity>
+            张海涛
+        -->
+        <activity android:name=".login.activity.HomeActivityNew"/>
+        <activity
+            android:name=".login.activity.RegistWelcomeActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".login.activity.RegistDetailActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".login.activity.testActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity
+            android:name=".login.activity.GuidianInfoSetActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".login.activity.LoginActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".login.activity.FindPasswordActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".login.activity.FirstLoginGuide1Activity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".login.activity.FirstLoginGuide2Activity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".message.acitivity.MessageHomeActivity"/>
+        <activity android:name=".message.acitivity.ListMessageActivity"/>
+        <activity android:name=".message.acitivity.DetailMessageActivity"/>
+        <activity android:name=".mygaia.activity.MyGaiaHomeActivity"/>
+        <activity android:name=".mygaia.activity.BalanceActivity"/>
+        <activity android:name=".mygaia.activity.CouponActivity"/>
+        <activity android:name=".mygaia.activity.PointsActivity"/>
+        <activity android:name=".mygaia.activity.MyOrderActivity"/>
+        <activity android:name=".mygaia.activity.MyComplaintActivity"/>
+        <activity android:name=".mygaia.activity.AddNewComplaintActivity"/>
+        <activity android:name=".mygaia.activity.UncommentOrderActivity"/>
+        <activity android:name=".makeorder.activity.ShowDoctorInfoActivity"/>
+        <activity android:name=".makeorder.activity.SubmitOrderActivity"/>
+        <activity android:name=".makeorder.activity.MakeOrderServiceListActivity"/>
+        <activity android:name=".makeorder.activity.MakeOrderActivity"/>
+        <activity android:name=".makeorder.activity.ShowDoctorsListActivity"/>
+        <activity android:name=".makeorder.activity.ShowDepartmentListActivity"/>
+        <activity android:name=".makeorder.activity.ShowServiceInfoActivity"/>
+        <activity android:name=".mygaia.activity.SettingActivity"/>
+        <activity android:name=".mygaia.activity.ComplaintDetailInfoActivity"/>
+        <activity android:name=".mygaia.activity.PayResultActivity"/>
+
+        <!-- 实时通信模块、推送（若使用该功能，需添加以下声明）START -->
+        <service android:name="com.avos.avoscloud.PushService"/>
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <!-- 实时通信模块、推送 END -->
+
+
+
+        <!--
+             APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
+            如果 SDKOptions 中提供了，取 SDKOptions 中的值。
+        -->
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="8c3a3d2f0e4a95c1cbd68700adf0e05c"/>
+
+        <!-- 声明云信后台服务，如需保持后台推送，使用独立进程效果会更好。 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core"/>
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core"/>
+
+        <!--
+             云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，
+            保持和 NimService 同一进程
+        -->
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 云信进程间通信 Receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver"/>
+
+        <!--&lt;!&ndash; 安卓保活配置 &ndash;&gt;
+        <service
+            android:name="com.netease.cosine.core.CosineService"
+            android:process=":cosine">
+        </service>
+
+        <receiver
+            android:name="com.netease.cosine.target.CosineReceiver"
+            android:exported="true"
+            android:process=":cosine">
+        </receiver>
+-->
+        <meta-data
+            android:name="com.netease.cosine.target"
+            android:value=""/>
+        <meta-data
+            android:name="com.netease.cosine.target.receiver"
+            android:value="com.netease.nimlib.service.NimReceiver"/>
+        <!--云信设置-->
+
+
+        <!-- 王浩韩 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="dd156e6d5456966e467c0f953031087d"/>
+
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <activity android:name=".gaiaclinic.activity.AroundGaiaActivity"/>
+        <activity android:name=".gaiaclinic.activity.AroundSearchActivity"/>
+        <activity android:name=".gaiaclinic.activity.GaiaDetailActivity"/>
+
+        <service android:name=".utils.stepsutils.StepService"/>
+
+        <activity android:name=".healthmanage.activity.HealthRecordActivity"/>
+        <activity android:name=".healthmanage.activity.HealthPlanActivity"/>
+        <activity android:name=".healthmanage.activity.SportPlanDetailActivity"/>
+        <activity android:name=".healthmanage.activity.CnMedicinePlanDetailActivity"/>
+        <activity android:name=".healthmanage.activity.DietPlanDetailActivity"/>
+        <activity android:name=".healthmanage.activity.SmokePlanDetailActivity"/>
+        <activity android:name=".healthmanage.activity.DrinkPalnDetailActivity"/>
+        <activity android:name=".healthmanage.activity.HealthToolsActivity"/>
+        <activity android:name=".healthmanage.activity.BmiActivity"/>
+        <activity android:name=".healthmanage.activity.HealthManagerActivity"/>
+        <activity android:name=".healthmanage.activity.ApplyReplaceActivity"/>
+        <activity android:name=".healthmanage.activity.ProcessEvaluationActivity"/>
+        <activity android:name=".healthmanage.activity.HealthAddNewComplaintActivity"/>
+        <activity android:name=".healthmanage.activity.QuestionnaireActivity"/>
+        <activity android:name=".healthmanage.activity.QuestionaireListActivity"/>
+        <activity android:name=".gaiaclinic.activity.ConsultingActivity"/>
+        <activity android:name=".gaiaclinic.activity.HealthSeviceActivity"/>
+        <activity
+            android:name=".gaiaclinic.activity.PersonalArchivesActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name=".mygaia.activity.PointsExchangeActivity"/>
+        <activity android:name=".mygaia.activity.ShowVipInfoActivity"/>
+        <activity android:name=".login.activity.TestRefreshLoadMoreActivity"/>
+        <activity android:name=".leancloudchat.ChatActivity"/>
+        <activity android:name=".leancloud.activity.ChatDemoActivity"/>
+        <activity android:name=".mall.activity.MallHomeActivity"/>
+        <activity android:name=".mall.activity.GoodsDetailActivity"/>
+        <activity android:name=".mall.activity.ShoppingCartActivity"/>
+        <activity android:name=".mygaia.activity.OrderDetailActivity">
+        </activity>
+        <activity android:name=".mall.activity.OrderConfirmActivity">
+        </activity>
+        <activity android:name=".mall.activity.OrderCompleteActivity">
+        </activity>
+        <activity android:name=".mall.activity.AddCommentActivity">
+        </activity>
+    </application>
+
+</manifest>

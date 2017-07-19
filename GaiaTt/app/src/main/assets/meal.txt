@@ -1,0 +1,291 @@
+﻿{
+    "param": {
+        "commonList": [
+            {
+                "mealId": 0,
+                "group": 0,
+                "mealName": "牛奶",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 1,
+                "group": 0,
+                "mealName": "油条",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 2,
+                "group": 0,
+                "mealName": "鸡蛋",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 3,
+                "group": 0,
+                "mealName": "豆浆",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 4,
+                "group": 0,
+                "mealName": "香蕉",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 5,
+                "group": 0,
+                "mealName": "馒头",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 6,
+                "group": 0,
+                "mealName": "包子",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 7,
+                "group": 0,
+                "mealName": "生菜",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 8,
+                "group": 0,
+                "mealName": "牛肉",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 9,
+                "group": 0,
+                "mealName": "奶酪",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 10,
+                "group": 0,
+                "mealName": "牛奶",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 11,
+                "group": 0,
+                "mealName": "油条",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 12,
+                "group": 0,
+                "mealName": "鸡蛋",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 13,
+                "group": 0,
+                "mealName": "豆浆",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 14,
+                "group": 0,
+                "mealName": "香蕉",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 15,
+                "group": 0,
+                "mealName": "馒头",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 16,
+                "group": 0,
+                "mealName": "包子",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 17,
+                "group": 0,
+                "mealName": "生菜",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 18,
+                "group": 0,
+                "mealName": "牛肉",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 19,
+                "group": 0,
+                "mealName": "奶酪",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            }
+        ],
+        "stapleFoodList": [
+            {
+                "mealId": 0,
+                "group": 0,
+                "mealName": "油条",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 1,
+                "group": 0,
+                "mealName": "小菜",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 2,
+                "group": 0,
+                "mealName": "鸡蛋",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 3,
+                "group": 0,
+                "mealName": "豆浆",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 4,
+                "group": 0,
+                "mealName": "香蕉",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 5,
+                "group": 0,
+                "mealName": "馒头",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 6,
+                "group": 0,
+                "mealName": "包子",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 7,
+                "group": 0,
+                "mealName": "生菜",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 8,
+                "group": 0,
+                "mealName": "牛肉",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 9,
+                "group": 0,
+                "mealName": "奶酪",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 10,
+                "group": 0,
+                "mealName": "油条",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 11,
+                "group": 0,
+                "mealName": "小菜",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 12,
+                "group": 0,
+                "mealName": "鸡蛋",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 13,
+                "group": 0,
+                "mealName": "豆浆",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            },
+            {
+                "mealId": 14,
+                "group": 0,
+                "mealName": "香蕉",
+                "unit": "ml",
+                "sort": 0,
+                "calorie": "12312"
+            }
+        ]
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

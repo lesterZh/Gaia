@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //greenDao的依赖
+    compile 'de.greenrobot:greendao-generator:1.3.1'
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaia.member.gaiatt.gaiaclinic.activity.ConsultingActivity"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/connsulting_back_re"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        >
+        <LinearLayout
+            android:id="@+id/connsulting_detail_back_ll"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/connsulting_detail_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_icon_plan_back"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/connsulting_detail_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connsulting"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+        <gaia.com.componentlibrary.custom.CustomIndicator
+            android:id="@+id/consulting_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorColor="@color/systemBule"
+            app:indicatorHeight="2dp"
+            app:indicatorWidth="30dp"
+            app:unSelectTextColor="@color/text_content"
+            app:selectTextColor="@color/systemBule"
+            app:titleTextSize="15sp"
+            app:titleTopBottomPadding="10dp" >
+
+        </gaia.com.componentlibrary.custom.CustomIndicator>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGray"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_consulting_container"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

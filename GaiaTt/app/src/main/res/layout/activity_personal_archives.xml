@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:id="@+id/activity_root_view"
+              tools:context="com.gaia.member.AroundGaiaActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/titilebar_layout"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@color/backgound_line"
+                android:text="必填信息"
+                android:textColor="@color/text_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                />
+            <include layout="@layout/item_personal_archivesone_layout"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@color/backgound_line"
+                android:text="非必填信息"
+                android:textColor="@color/text_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                />
+            <include layout="@layout/item_personal_archivestwo_layout"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/tv_personal_archives_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="保存"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_btn_blue_rect"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

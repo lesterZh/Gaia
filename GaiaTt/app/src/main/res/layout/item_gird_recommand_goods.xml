@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#fff"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+    <ImageView
+        android:id="@+id/iv_recommand_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/debug_goods_icon"/>
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple iPhone60 64G"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y199"
+            android:textColor="@color/systemBule"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            />
+        <TextView
+            android:id="@+id/tv_goods_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述描述"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_shopping_cart"
+        android:layout_width="110dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_blue_solid_btn_selector"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:text="加入购物车"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

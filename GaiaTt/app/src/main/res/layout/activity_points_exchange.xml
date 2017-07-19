@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaia.member.gaiatt.mygaia.activity.PointsExchangeActivity">
+
+    <include layout="@layout/base_title_bar" />
+
+    <com.gaia.member.gaiatt.ui.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head"></include>
+
+
+        <com.gaia.member.gaiatt.ui.PullOrLoadGridView
+            android:id="@+id/gv_exchange_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:verticalSpacing="5dp">
+
+        </com.gaia.member.gaiatt.ui.PullOrLoadGridView>
+
+        <include layout="@layout/load_more"></include>
+
+    </com.gaia.member.gaiatt.ui.PullToRefreshLayout>
+</LinearLayout>

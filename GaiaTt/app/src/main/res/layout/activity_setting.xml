@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/base_title_bar" />
+        <RelativeLayout
+            android:id="@+id/rl_user_photo"
+            android:layout_width="90dp"
+            android:layout_marginTop="60dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/man" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_photo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像"
+            android:textSize="15sp"
+            android:layout_margin="20dp"
+            android:textColor="@color/TextColorDarkGray"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_edittext"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名 "
+                android:textColor="@color/TextColorLightGray"
+                android:textSize="15sp"
+                android:paddingRight="40dp"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:textCursorDrawable="@null"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColorDarkGray"
+                android:textSize="15sp"
+                android:hint="请输入您的姓名"
+                android:background="@null"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_edittext"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓别 "
+                android:textColor="@color/TextColorLightGray"
+                android:textSize="15sp"
+                android:paddingRight="40dp"/>
+            <TextView
+                android:id="@+id/tv_sex"
+                android:gravity="right"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColorDarkGray"
+                android:textSize="15sp"
+                android:text="男"
+                />
+            <!--<RadioGroup
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rd_sex_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColorDarkGray"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/selector_icon_pitch"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:text="男"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:id="@+id/rd_sex_femail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColorDarkGray"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/selector_icon_pitch"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:text="女"/>
+
+            </RadioGroup>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_edittext"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码"
+                android:paddingRight="25dp"
+                android:textColor="@color/TextColorLightGray"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/et_phone"
+                android:gravity="right"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TextColorDarkGray"
+                android:textSize="15sp"
+                android:text="18200381860"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_select_base"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:background="@drawable/shape_edittext"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本资料完善"
+                android:layout_weight="4"
+                android:textColor="@color/TextColorLightGray"
+                android:textSize="15sp"/>
+
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/icon_arrow_selector"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/ButtonBlueSolidStyle"
+            android:text="退出此账号"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_set_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+
+        <Button
+            android:background="@drawable/bg_btn_white_solid"
+            android:id="@+id/btn_cancel"
+            android:layout_width="314dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="取消" />
+
+        <LinearLayout
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@id/btn_cancel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_white_solid"
+            >
+        <Button
+            android:id="@+id/btn_camara"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:text="拍照" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btn_select_from_photo_album"
+            android:background="@null"
+            android:layout_width="314dp"
+            android:layout_height="40dp"
+            android:text="从相册选择" />
+        </LinearLayout>.
+    </RelativeLayout>
+
+</FrameLayout>

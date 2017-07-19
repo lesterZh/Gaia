@@ -1,0 +1,15 @@
+﻿{
+    "param": {
+        "id": 1000002,
+        "name": "徐星辰",
+        "icon": "xxx.png",
+        "detail": "健康管理医师介绍，健康管理医师介绍，健康管理医师介绍,健康管理医师介绍.",
+        "degree": 3,
+        "storeId": 3,
+        "storeName": "盖亚高新店",
+        "professionalTitle": "副教授|华西医院|小儿外科|从业20年，有丰富的临床经验"
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

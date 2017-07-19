@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:degree="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <include layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="当前体重"
+            />
+
+        <TextView
+            android:id="@+id/degree_value_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:text="100.0kg"
+            />
+
+        <com.gaia.member.gaiatt.login.ui.DegreeScaleView
+            android:layout_marginTop="0dp"
+            android:id="@+id/degree_scale_view"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:paddingTop="20dp"
+            degree:max_value="300"
+            degree:current_value="50"
+            degree:degree_value_size="15sp"
+            degree:min_degree_width="10dp"
+            degree:degree_line_color="@android:color/darker_gray"
+            degree:degree_value_color="#000"
+            degree:select_degree_line_color="@android:color/holo_blue_light"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        style="@style/ButtonBlueSolidStyle"
+        android:text="下一步"
+        android:id="@+id/btn_next"
+        />
+
+
+</LinearLayout>

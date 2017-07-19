@@ -1,0 +1,99 @@
+﻿{
+    "param": {
+        "sleepList": [
+             {
+                        "sleepTime": 480,
+                        "fallAsleep": "21:00",
+                        "wake": "05:00",
+                        "date": "2016-6-12"
+                    },
+            {
+                "sleepTime": 420,
+                "fallAsleep": "21:00",
+                "wake": "04:00",
+                "date": "2016-6-13"
+            },
+            {
+                "sleepTime": 360,
+                "fallAsleep": "22:00",
+                "wake": "04:00",
+                "date": "2016-6-14"
+            },
+            {
+                "sleepTime": 480,
+                "fallAsleep": "22:00",
+                "wake": "06:00",
+                "date": "2016-6-15"
+            },
+            {
+                "sleepTime": 360,
+                "fallAsleep": "00:00",
+                "wake": "06:00",
+                "date": "2016-6-16"
+            },
+            {
+                "sleepTime": 480,
+                "fallAsleep": "22:00",
+                "wake": "06:00",
+                "date": "2016-6-17"
+            },
+            {
+                "sleepTime": 600,
+                "fallAsleep": "20:00",
+                "wake": "06:00",
+                "date": "2016-6-18"
+            },
+            {
+                "sleepTime": 300,
+                "fallAsleep": "02:00",
+                "wake": "07:00",
+                "date": "2016-6-19"
+            },
+            {
+                "sleepTime": 480,
+                "fallAsleep": "22:00",
+                "wake": "06:00",
+                "date": "2016-6-20"
+            },
+            {
+                "sleepTime": 540,
+                "fallAsleep": "03:00",
+                "wake": "12:00",
+                "date": "2016-6-21"
+            },
+            {
+                "sleepTime": 480,
+                "fallAsleep": "22:00",
+                "wake": "06:00",
+                "date": "2016-6-22"
+            },
+            {
+                "sleepTime": 0,
+                "fallAsleep": "00:00",
+                "wake": "00:00",
+                "date": "2016-6-23"
+            },
+            {
+                "sleepTime": 0,
+                "fallAsleep": "00:00",
+                "wake": "00:00",
+                "date": "2016-6-24"
+            },
+            {
+                "sleepTime": 0,
+                "fallAsleep": "00:00",
+                "wake": "00:00",
+                "date": "2016-6-25"
+            },
+            {
+                "sleepTime": 0,
+                "fallAsleep": "00:00",
+                "wake": "00:00",
+                "date": "2016-6-26"
+            }
+        ]
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

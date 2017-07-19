@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--张海涛-->
+    <color name="systemBule">#3d82e5</color>
+    <color name="systemOrange">#FF7E00</color>
+    <color name="systemBackground">#EEEFF4</color>
+
+    <!--登录的背景色-->
+    <color name="systemBackground2">#F8F8F8</color>
+
+
+    <color name="systemCyan">#05C0AD</color>
+    <color name="divideColorWhite">#5793E9</color>
+    <color name="divideColorGray">#F0EFF4</color>
+    <color name="divideColor">#CCC</color>
+
+    <color name="TextColorLightGray">#666666</color>
+    <color name="TextColorDarkGray">#333333</color>
+    <color name="TextColorWhite">#fff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#0000</color>
+    <color name="black">#f000</color>
+
+
+    <color name="darkerGray">@android:color/darker_gray</color>
+    <color name="editTextBoundLine">#E1E1E1</color>
+    <color name="TestColor">#ffb</color>
+    <color name="TestColor2">#fbb</color>
+    <color name="blueDarkButtonPress">#3573cd</color>
+
+    <!--王浩韩-->
+    <color name="red">#fd6058</color>
+    <color name="green">#5ec351</color>
+    <color name="blue">#3D82E5</color>
+    <color name="blue_normal">#883D82E5</color>
+    <color name="blue_light">#ff0099cc</color>
+    <color name="orange">#ffb43d</color>
+    <color name="event_background">#E7E7E7</color>
+    <color name="backgound_line">#eeeff4</color>
+    <color name="line_above">#dddddd</color>
+    <color name="lightGray">#D1D1D1</color>
+    <color name="lightGrayline">#F6F6F6</color>
+    <color name="background_home">#f1f3f4</color>
+    <color name="movement_index">#ff8400</color>
+    <color name="movement_bar">#fcff00</color>
+    <color name="movement_line">#cc6a00</color>
+    <color name="movement_line_a">#ff9d33</color>
+    <color name="sleep_index">#ac7fff</color>
+    <color name="sleep_index_r">#5a46cf</color>
+    <color name="sleep_bar">#c68eff</color>
+    <color name="sleep_line">#4838a6</color>
+    <color name="sleep_line_a">#7b6bd9</color>
+    <color name="smoke_index_r">#2cb69a</color>
+    <color name="smoke_bar">#9bff73</color>
+    <color name="smoke_line">#23927b</color>
+    <color name="smoke_line_a">#56c5ae</color>
+    <color name="drink_index_r">#fd6058</color>
+    <color name="drink_index_bar">#ffe71e</color>
+    <color name="drink_line">#ca4d46</color>
+    <color name="drink_line_a">#fd8079</color>
+    <color name="habit__index">#3d82e5</color>
+    <color name="disease_index">#2cb69a</color>
+    <color name="text_index">#666666</color>
+    <color name="icon_function">#333333</color>
+    <color name="text_content">#666666</color>
+    <color name="text_title">#333333</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_clinic_title">#75787d</color>
+    <color name="detail_green">#41c5b5</color>
+    <color name="touming">#00000000</color>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/titilebar_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+
+            <gaia.com.componentlibrary.custom.CustomToolBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                >
+                <gaia.com.componentlibrary.custom.CustomIndicator
+                    android:id="@+id/health_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:titleTextSize="15sp"
+                    app:unSelectTextColor="@color/text_index"
+                    app:titleLeftRightPadding="12dp"
+                    app:titleTopBottomPadding="5dp"
+                    app:indicatorColor="@color/blue"
+                    app:selectTextColor="@color/blue"
+                    app:indicatorWidth="40dp" >
+
+                </gaia.com.componentlibrary.custom.CustomIndicator>
+            </gaia.com.componentlibrary.custom.CustomToolBar>
+
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/health_plan_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <include layout="@layout/calendar_dialog_layout"></include>
+</RelativeLayout>

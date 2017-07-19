@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/touming"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/titlebar_back_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        >
+        <ImageView
+            android:id="@+id/titlebar_back_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_icon_plan_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+            <gaia.com.componentlibrary.custom.CustomIndicator
+                android:id="@+id/shape_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:titleTextSize="18sp"
+                app:titleSpacing="8dp"
+                app:unSelectTextColor="@android:color/white"
+                app:selectTextColor="@android:color/white"
+                app:indicatorColor="@android:color/white"
+                app:indicatorWidth="40dp" >
+            </gaia.com.componentlibrary.custom.CustomIndicator>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/titlebar_calendar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/titlebar_calendar_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_icon_nav_back"/>
+    </LinearLayout>
+</LinearLayout>

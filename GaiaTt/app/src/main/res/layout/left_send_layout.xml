@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="80dip"
+                android:paddingLeft="8dip"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+    <ImageView
+        android:id="@+id/chatlist_image_other"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="5dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ph_avatar_female"/>
+    <TextView
+        android:id="@+id/chatlist_text_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chatlist_image_other"
+        android:layout_alignTop="@id/chatlist_image_other"
+        android:text="hewdfb"
+        android:autoLink="all"
+        android:gravity="center"
+        android:background="@drawable/btn_chat_lightblue_s"/>
+    <ImageView
+        android:id="@+id/chatlist_img_other"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chatlist_image_other"
+        android:layout_alignTop="@id/chatlist_image_other"
+        android:background="@drawable/test1"
+        android:paddingTop="13dip"
+        android:paddingBottom="18dip"/>
+</RelativeLayout>

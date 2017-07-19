@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="130dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/re_item_clinic">
+
+        <ImageView
+            android:id="@+id/img_item_clinic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/log_jtys"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:id="@+id/tv_item_clinic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_item_clinic"
+            android:textColor="@color/text_title"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_item_clinic_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_item_clinic"
+            android:layout_below="@+id/tv_item_clinic_title"
+            android:textColor="@color/text_hint"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="5dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_above"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

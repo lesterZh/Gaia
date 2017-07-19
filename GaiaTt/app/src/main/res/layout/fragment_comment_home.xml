@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <com.gaia.member.gaiatt.mygaia.ui.CustomIndicator
+        android:id="@+id/indicator_comment_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/systemBule"
+        app:indicatorHeight="2dp"
+        app:indicatorWidth="30dp"
+        app:titleTopBottomPadding="10dp"
+        app:unSelectTextColor="@color/TextColorDarkGray"
+        app:selectTextColor="@color/systemBule"
+        app:titleTextSize="13sp"
+        >
+
+    </com.gaia.member.gaiatt.mygaia.ui.CustomIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_commnet_home">
+
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

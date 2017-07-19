@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CustomIndicator">
+        <attr name="indicatorColor" format="color"/>
+        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="indicatorMarginTop" format="dimension"/>
+        <attr name="selectTextColor" format="color"/>
+        <attr name="unSelectTextColor" format="color"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleSpacing" format="dimension"/>
+        <attr name="titleTopBottomPadding" format="dimension"/>
+        <attr name="titleLeftRightPadding" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CustomCommentStar">
+        <attr name="lightStarSrc" format="reference"/>
+        <attr name="unLightStarSrc" format="reference"/>
+        <attr name="imageWidth" format="dimension"/>
+        <attr name="imageHeight" format="dimension"/>
+        <attr name="imagePadding" format="dimension"/>
+        <attr name="clickable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTip">
+        <attr name="occlusionWidth" format="dimension"/>
+        <attr name="occlusionHeight" format="dimension"/>
+        <attr name="tipsCount" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomCounter">
+        <attr name="counterWidth" format="dimension"/>
+        <attr name="counterHeight" format="dimension"/>
+        <attr name="counterTextSize" format="dimension"/>
+        <attr name="buttonBackground" format="color|reference"/>
+        <attr name="counterBackground" format="color|reference"/>
+        <attr name="buttonTextColor" format="color"/>
+        <attr name="counterTextColor" format="color"/>
+    </declare-styleable>
+
+
+</resources>

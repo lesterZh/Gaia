@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.gaia.member.gaiatt.ui.ChartViewPager
+            android:id="@+id/vPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"/>
+        <include
+            layout="@layout/viewpage_title_bar_layout"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/calendar_dialog_layout"></include>
+    <include layout="@layout/diet_dialog_layout"></include>
+</RelativeLayout>

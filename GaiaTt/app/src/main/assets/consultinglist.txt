@@ -1,0 +1,68 @@
+﻿{
+    "param": {
+        "list": [
+            {
+                "id": 100001,
+                "headpic": "15664561.png",
+                "status": 0,
+                "demand": 0,
+                "name": "黎明",
+                "level": "副教授",
+                "skilful": "全科",
+                "belongs": "盖亚高新诊所"
+            },
+            {
+                "id": 100002,
+                "headpic": "15664561.png",
+                "status": 1,
+                "demand": 1,
+                "name": "周折",
+                "level": "医师",
+                "skilful": "全科",
+                "belongs": "盖亚武侯诊所"
+            },
+            {
+                "id": 100003,
+                "headpic": "15664561.png",
+                "status": 0,
+                "demand": 0,
+                "name": "李博比",
+                "level": "教授",
+                "skilful": "全科",
+                "belongs": "盖亚高青羊诊所"
+            },{
+                "id": 100004,
+                "headpic": "15664561.png",
+                "status": 0,
+                "demand": 0,
+                "name": "李明",
+                "level": "副教授",
+                "skilful": "全科",
+                "belongs": "盖亚高新诊所"
+            },
+            {
+                "id": 100005,
+                "headpic": "15664561.png",
+                "status": 1,
+                "demand": 1,
+                "name": "周蛇",
+                "level": "医师",
+                "skilful": "全科",
+                "belongs": "盖亚武侯诊所"
+            },
+            {
+                "id": 100006,
+                "headpic": "15664561.png",
+                "status": 2,
+                "demand": 2,
+                "name": "李墨迹",
+                "level": "医师",
+                "skilful": "全科",
+                "belongs": "盖亚高金牛诊所"
+            }
+        ]
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

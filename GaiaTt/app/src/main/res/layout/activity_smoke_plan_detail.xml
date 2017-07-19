@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".activity.healthmanage.SportPlanDetailActivity">
+    <com.gaia.member.gaiatt.ui.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head"></include>
+
+        <com.gaia.member.gaiatt.ui.PullOrLoadListView
+            android:id="@+id/smoke_plan_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/backgound_line"
+            android:dividerHeight="0dp"
+            ></com.gaia.member.gaiatt.ui.PullOrLoadListView>
+
+        <include layout="@layout/load_more"></include>
+
+    </com.gaia.member.gaiatt.ui.PullToRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/smokeplan_back_re"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/smoke_detail_back_ll"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/smoke_detail_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_icon_plan_back"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/smoke_detail_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吸烟计划"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/plan_line"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@color/backgound_line"
+        android:layout_below="@+id/smokeplan_back_re"
+        android:layout_height="1dp"/>
+    <ImageView
+        android:id="@+id/smoke_detail_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/selector_btn_plan"
+        />
+</RelativeLayout>

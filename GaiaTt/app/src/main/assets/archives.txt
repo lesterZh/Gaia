@@ -1,0 +1,52 @@
+﻿{
+    "param": {
+        "required": {
+            "name": "王丽",
+            "sex": "女",
+            "birthday": "1995-04-23",
+            "id": 512201199504223000,
+            "phoneNumber": "13898985644",
+            "contact": "王爸爸",
+            "contactPhoneNumber": "13658928687",
+            "householdType": "户籍",
+            "nativePlace": "四川省|成都市|武侯区|大源|xxx",
+            "ethnicity": "汉族",
+            "ABObloodType": "不详",
+            "RHbloodType": "不详",
+            "education": "文盲",
+            "profession": "学生",
+            "maritalStatus": "未婚",
+            "medicalPayment": "城镇职工基本医疗保险|商业医疗保险|贫困救助|旅游事故险"
+        },
+        "optional": {
+            "address": "四川省|成都市|武侯区|大源|xxx",
+            "wrokPlace": "成都壹柒互动科技有限公司",
+            "drugAllergyHistory": "无",
+            "exposureHistory": "无",
+            "pastMedicalHistory": {
+                "disease": "无",
+                "surgery": "无",
+                "trauma": "无",
+                "transfusion": "无",
+                "familyMedicalHistory": {
+                    "father": "无",
+                    "mother": "无",
+                    "brothersAndSisters": "无",
+                    "children": "无"
+                },
+                "geneticHistory": "无",
+                "disabilityStatus": "无"
+            },
+            "environment": {
+                "kitchenExhaustSetting": "油烟机",
+                "fuelType": "天然气",
+                "water": "经净化过滤的水",
+                "toilet": "卫生厕所",
+                "corral": "单设"
+            }
+        }
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}

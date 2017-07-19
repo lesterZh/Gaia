@@ -1,0 +1,129 @@
+﻿{
+    "param": {
+        "list": [
+            {
+                             "id": 100001,
+                             "imgUrl": "15664561.png",
+                             "serviceName": "气疗服务",
+                             "price": 199,
+                             "level": "VIP1",
+                             "buyStatus": 1,
+                             "sort": 1,
+                             "description": "剩余次数3次"
+                         },
+                         {
+                             "id": 100002,
+                             "imgUrl": "15664561.png",
+                             "serviceName": "化疗服务",
+                             "price": 199,
+                             "level": "VIP2",
+                             "buyStatus": 0,
+                              "sort": 2,
+                             "description": "有效期：2016-04-03"
+                         },
+                         {
+                             "id": 100003,
+                             "imgUrl": "15664561.png",
+                             "serviceName": "普通服务",
+                             "price": 199,
+                             "level": "",
+                              "sort": 3,
+                             "buyStatus": 1,
+                             "description": "剩余次数1次"
+                         },
+                         {
+                             "id": 100004,
+                             "imgUrl": "15664561.png",
+                             "serviceName": "气疗服务",
+                             "price": 199,
+                             "level":"VIP1",
+                              "sort": 4,
+                             "buyStatus": 1,
+                             "description": "有效期：2016-07-03"
+                         },
+                         {
+                             "id": 100005,
+                             "imgUrl": "15664561.png",
+                             "serviceName": "***服务",
+                             "price": 199,
+                             "level":"VIP2",
+                             "buyStatus": 0,
+                              "sort": 5,
+                             "description": "剩余次数3次"
+                         },
+                         {
+                             "id": 100006,
+                             "imgUrl": "15664561.png",
+                             "serviceName": "气疗服务",
+                             "price": 199,
+                             "level": "VIP1",
+                              "sort":6,
+                             "buyStatus":0,
+                             "description": "剩余次数0次"
+                         },
+                          {
+                                         "id": 100007,
+                                         "imgUrl": "15664561.png",
+                                         "serviceName": "气疗服务",
+                                         "price": 199,
+                                         "level": "VIP1",
+                                         "buyStatus": 1,
+                                          "sort": 7,
+                                         "description": "剩余次数3次"
+                                     },
+                                     {
+                                         "id": 100008,
+                                         "imgUrl": "15664561.png",
+                                         "serviceName": "化疗服务",
+                                         "price": 199,
+                                         "level": "VIP2",
+                                         "buyStatus": 0,
+                                          "sort": 8,
+                                         "description": "有效期：2016-04-03"
+                                     },
+                                     {
+                                         "id": 100009,
+                                         "imgUrl": "15664561.png",
+                                         "serviceName": "普通服务",
+                                         "price": 199,
+                                         "level": "VIP2",
+                                         "buyStatus": 1,
+                                          "sort": 9,
+                                         "description": "剩余次数1次"
+                                     },
+                                     {
+                                         "id": 1000010,
+                                         "imgUrl": "15664561.png",
+                                         "serviceName": "气疗服务",
+                                         "price": 199,
+                                         "level":"VIP1",
+                                         "buyStatus": 1,
+                                          "sort": 10,
+                                         "description": "有效期：2016-07-03"
+                                     },
+                                     {
+                                         "id": 1000011,
+                                         "imgUrl": "15664561.png",
+                                         "serviceName": "***服务",
+                                         "price": 199,
+                                         "level": "VIP1",
+                                         "buyStatus": 0,
+                                          "sort": 11,
+                                         "description": "剩余次数3次"
+                                     },
+                                     {
+                                         "id": 1000012,
+                                         "imgUrl": "15664561.png",
+                                         "serviceName": "气疗服务",
+                                         "price": 199,
+                                         "level": "VIP1",
+                                         "buyStatus":0,
+                                          "sort": 12,
+                                         "description": "剩余次数0次"
+                                     }
+        ]
+    },
+    "error": null,
+    "returnValue": null,
+    "success": true
+}
